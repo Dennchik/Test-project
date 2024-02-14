@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"> 
+<symbol viewBox="0 0 448 512" id="blue-shadow">
+<path d="M477.947 656.519L264.032 605.132L174.664 540.469L201.227 369.957L376.649 350.391L375.041 228.647L577.309 174.392L707.603 205.691L625.166 471.797L497.893 504.987L477.947 656.519Z" fill="#4D5BCE"/>
+</symbol>
+
+<symbol viewBox="0 0 448 512"  id="green-shadow">
+<path d="M673.469 258.482L689.984 477.861L655.759 582.726L485.295 609.597L413.003 448.57L297.588 487.343L184.059 311.368L174 177.746L452.567 174.828L523.099 285.846L673.469 258.482Z" fill="#00717e"/>
+</symbol>
+
+<symbol viewBox="0 0 512 512" id="folder-directory">
+<path d="M224 64l64 64h224v352h-512v-416z"/>
+</symbol>
+
+<symbol viewBox="0 0 512 512" id="folder-open-directory">
+<path d="M416 480l96-256h-416l-96 256zM64 192l-64 288v-416h144l64 64h208v64z"/>
+</symbol>
+</svg>

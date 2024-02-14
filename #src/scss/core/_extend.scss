@@ -1,0 +1,39 @@
+.grad_underline {
+	background: linear-gradient(to left, transparent, transparent),
+		linear-gradient(
+			to left,
+			var(--background-selected),
+			var(--font-color-active)
+		);
+	background-size:
+		100% 1px,
+		0 1px;
+	background-position:
+		100% 100%,
+		0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+.gradient-box {
+	background: linear-gradient(to right, #0b486bbd, #0b486b, #0b486bbd);
+}
+.gradient-top-link {
+	text-shadow: $orange 1px 0 10px;
+	background: linear-gradient(to bottom, #008192, #90effc, #008192 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient {
+	// background: linear-gradient(to right bottom, #000000, #191b27);
+}
+
+.icon-style {
+	border: 1px var(--border-color);
+	border-style: none solid;
+	height: 100%;
+	padding: 0 1.5rem;
+	@include flex-align-center;
+}

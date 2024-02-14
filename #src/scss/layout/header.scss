@@ -1,0 +1,7 @@
+.header {
+	border: 1px solid #000;
+	height: 9rem;
+	font-size: 4.2rem;
+	@include flex-align-center-justify-center;
+	text-transform: uppercase;
+}

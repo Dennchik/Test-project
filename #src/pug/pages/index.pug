@@ -1,0 +1,21 @@
+extends ../layout/app
+
+block title
+	- var text='Example - project'
+
+block page  
+	.page._container
+		._body
+			h2 Image Modal
+			p In this example, we use CSS to create a modal (dialog box) that is hidden by default.
+			p We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.
+		._images
+			._image
+				img#myImg(src="../img/img_snow.jpg", alt="Snow", style="width:100%;max-width:300px")
+			._image
+				img#myImg(src="../img/cover.jpg", alt="Snow", style="width:100%;max-width:300px")
+		.modal
+			span.close ×
+			img._image(src="#", alt="Snow").modal-content#img01
+			//- #caption
+
