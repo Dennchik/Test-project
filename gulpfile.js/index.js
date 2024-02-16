@@ -21,11 +21,11 @@ const task = $.requireDir('./task', { recurse: true });
 const change = $.gulp.series(task.clearFonts, task.fonts, fontsStyle);
 //* Observation
 const watcher = () => {
-	$.gulp.watch($.path.js.watch, task.js).on('all', $.browserSync.reload);
 	$.gulp.watch($.path.pug.watch, task.pug).on('all', $.browserSync.reload);
+	$.gulp.watch($.path.scss.watch, task.scss).on('all', $.browserSync.reload);
+	$.gulp.watch($.path.js.watch, task.js).on('all', $.browserSync.reload);
 	$.gulp.watch($.path.json.watch, task.json).on('all', $.browserSync.reload);
 	$.gulp.watch($.path.json.readFile, task.pug).on('all', $.browserSync.reload);
-	$.gulp.watch($.path.scss.watch, task.scss).on('all', $.browserSync.reload);
 	$.gulp.watch($.path.image.watch, task.image).on('all', $.browserSync.reload);
 	$.gulp.watch($.path.svgSpr.watch, task.svg).on('all', $.browserSync.reload);
 	$.gulp.watch($.path.fonts.watch, task.fonts).on('all', $.browserSync.reload);

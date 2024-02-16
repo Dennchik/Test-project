@@ -10,23 +10,28 @@
 		margin-bottom: 2rem;
 		height: 100%;
 	}
+
 	&__images {
-		display: grid;
-		grid-template-columns: 30.333% 30.333% 30.333%;
-		grid-template-rows: 1fr 1fr;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
-		gap: 4rem;
+		gap: 1rem;
+
 		img {
 			border-radius: 5px;
 			cursor: pointer;
 			transition: 0.3s;
 			object-fit: cover;
 			height: 100%;
-			min-width: 100%;
+			max-width: 100%;
 			&:hover {
 				opacity: 0.3;
 			}
 		}
+	}
+
+	&__image {
+		flex: 0 1 32.333%;
 	}
 }
 

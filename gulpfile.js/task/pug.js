@@ -14,6 +14,7 @@ const pug = () => {
 		.pipe($.gul.pug($.app.pug))
 		.pipe($.gul.fileInclude())
 		.pipe($.gul.webpHtml())
+		.pipe($.gul.htmlmin($.app.htmlMin))
 		.pipe($.gulp.dest($.path.pug.dest));
 };
 module.exports = pug;

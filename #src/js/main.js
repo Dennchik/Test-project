@@ -1,3 +1,6 @@
 import loaded from './modules/loading';
 loaded('.preloader');
-import { } from "./modules/lauots";
+
+import { modal } from './modules/lauots';
+modal()
+

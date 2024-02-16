@@ -59,11 +59,11 @@ module.exports = {
 		},
 	},
 	pug: {
-		pretty: isDev,
+		pretty: true,
 		plugins: [pugbem],
 	},
 	htmlMin: {
-		collapseWhitespace: isProd,
+		collapseWhitespace: true
 	},
 	Js: {
 		ext: {
