@@ -1,31 +1,28 @@
-extends ../layout/app
-
+extends ../layout/app_layout 
 block title
-	- var text='Example - project'
+	- var text='CreativeCult - CULT-HTML' 
 
-block page  
-	.page._container
-		._body
-			img(src="img/img_snow.jpg", alt="Snow", style="width:100%;max-width:300px")
-			h2 Image Modal
-			p In this example, we use CSS to create a modal (dialog box) that is hidden by default.
-			p We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.
-		._images
-			._image
-				img._img(src="img/img_snow.jpg", alt="Snow", style="width:100%;max-width:300px")
-			._image
-				img._img(src="img/cover.jpg", alt="Snow", style="width:100%;max-width:300px")
-			._image
-				img._img(src="img/lg_modland.jpg", alt="Snow", style="width:100%;max-width:300px")
-			._image
-				img._img(src="img/img_snow.jpg", alt="Snow", style="width:100%;max-width:300px")
-			._image
-				img._img(src="img/cover.jpg", alt="Snow", style="width:100%;max-width:300px")
-			._image
-				img._img(src="img/lg_modland.jpg", alt="Snow", style="width:100%;max-width:300px")
-
-		.modal
-			span.close ×
-			img._image(src="#", alt="Snow").modal-content#img01
-			//- #caption
-
+block header
+	include ../layout/header
+block burger-menu
+	include ../partials/burger-menu
+block info-block
+	include ../partials/section-info 
+block section-service-nordcore
+	include ../partials/section-nordcore
+block section-service-swift 
+	include ../partials/section-swift 
+block section-cases
+	include ../partials/section-cases
+block section-media 
+	include ../partials/section-media 
+block siction-review
+	include ../partials/section-review 
+block section-clients
+	include ../partials/section-clients
+block section-direction
+	include ../partials/section-direct
+block section-contact
+	include ../partials/section-contact
+block section-footer
+	include ..//partials/section-footer

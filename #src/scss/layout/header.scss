@@ -1,7 +1,23 @@
 .header {
-	border: 1px solid #000;
-	height: 9rem;
-	font-size: 4.2rem;
-	@include flex-align-center-justify-center;
-	text-transform: uppercase;
+	position: fixed;
+	width: 100%;
+	z-index: 11;
+	top: 16px;
+	opacity: 1;
+	transition: top 0.5s ease 0.3s;
+
+	&__wrapper {
+		max-width: 1264px;
+		margin: 0 auto;
+		opacity: 0;
+		transform: translateY(-300px);
+		transition: all 0.7s ease 0.5s;
+	}
+	&__body {
+		border-radius: 32px;
+		margin: 0 32px;
+		@include _490 {
+			margin: 0 16px;
+		}
+	}
 }

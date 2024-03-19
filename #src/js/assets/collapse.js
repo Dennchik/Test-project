@@ -52,9 +52,3 @@ export default class ItcCollapse {
 		this._target.classList.contains('_show') ? this.hide() : this.show();
 	}
 };
-
-// -------------------------(Initialize Swiper)-------------------------------
-// const collapse = new ItcCollapse(item.querySelector('._collapse'));
-// collapse.toggle();
-// // }
-// export default _collapse;

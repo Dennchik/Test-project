@@ -1,0 +1,51 @@
+include ../includes/mixins
+include ../includes/variables.pug
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="Краткое описание документа")
+		meta(name="keywords" content="keywords-ключевые слова для поиска")
+		block link
+			link(rel="icon" type="image/icon" href="@@webRoot/img/icon/favicon.ico")
+			link(rel="stylesheet" type="text/css" href="@@webRoot/css/style.min.css" ) 
+		block script
+			script(defer="defer" type="text/javascript" src="@@webRoot/js/main.min.js")
+		block title
+		- var text
+			title #{text}
+
+	body   
+		div(class="wrapper")
+			block page 
+				block header
+				block burger-menu
+				main.page._container 
+					._item._rellax-wrapper
+						section._info.show-element
+							block info-block
+						section._services-nordcore.show-element1._rellax(data-rellax-speed="4" data-rellax-percentage="0.29") 
+							block section-service-nordcore
+						section._services-swift.show-element1._rellax(data-rellax-speed="1" data-rellax-percentage="-2")
+							block section-service-swift 
+						section._cases.show-element1._rellax(data-rellax-speed="5" data-rellax-percentage="-0.4")
+							block section-cases
+						section._media.show-element1._rellax(data-rellax-speed="1" data-rellax-percentage="-5.4")
+							block section-media 
+						section._review.show-element1._rellax(data-rellax-speed="4" data-rellax-percentage="-1.9")
+							block siction-review
+						section._clients.show-element1._rellax(data-rellax-speed="2" data-rellax-percentage="-4.9")
+							block section-clients 
+						section._direction.show-element1._rellax(data-rellax-speed="5" data-rellax-percentage="-2.3")
+							block section-direction
+						section._contact.show-element1._rellax(data-rellax-speed="1" data-rellax-percentage="-13.5")
+							block section-contact
+						section._footer.show-element1._rellax(data-rellax-speed="4" data-rellax-percentage="-4")
+							block section-footer
+
+
+
+
+
+

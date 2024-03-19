@@ -1,0 +1,36 @@
+.holding-slide {
+	// .holding-slide__title
+	&__title {
+		margin-bottom: 24px;
+		color: rgb(16, 16, 16);
+		font-family: Manrope;
+		font-size: 36px;
+		font-weight: 600;
+		line-height: 104%;
+		letter-spacing: 0%;
+		@include _960 {
+			font-size: 29px;
+			margin-bottom: 20px;
+		}
+	}
+
+	// .holding-slide__body
+	&__body {
+		position: relative;
+	}
+
+	// .holding-slide__item
+	&__item {
+		display: flex;
+		gap: 8px;
+		overflow: hidden;
+		@include _960 {
+			overflow: visible;
+			padding-right: 16px;
+		}
+		@include _320 {
+			max-width: 256px;
+			margin-right: 16px;
+		}
+	}
+}

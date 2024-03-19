@@ -1,0 +1,309 @@
+.communication {
+	// .communication__body
+
+	&__body {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 120px 16px 184px;
+		gap: 16px;
+		@include flex-align-center-justify-space-between;
+		@include _768 {
+			gap: 48px;
+			padding: 88px 16px 144px;
+			flex-direction: column;
+		}
+	}
+
+	// .communication__column
+	&__column {
+		&:nth-child(1) {
+			max-width: 568px;
+		}
+		&:nth-child(2) {
+			max-width: 500px;
+			@include _768 {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.contacts {
+	// .contacts__title
+	&__title {
+		margin-bottom: 32px;
+		color: rgb(252, 252, 252);
+		font-family: Manrope;
+		font-size: 64px;
+		font-weight: 600;
+		line-height: 100%;
+		letter-spacing: 0%;
+		text-align: left;
+		@include _960 {
+			margin-bottom: 16px;
+			font-size: 36px;
+		}
+	}
+
+	// .contacts__text
+	&__text {
+		margin-bottom: 80px;
+		color: rgb(252, 252, 252);
+		font-family: Nunito Sans;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 160%;
+		letter-spacing: 0%;
+		opacity: 0.8;
+		@include _690 {
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+	}
+
+	// .contacts__footer
+	&__footer {
+		cursor: pointer;
+		display: grid;
+		gap: 6px;
+		grid-template-columns: 1fr 1fr;
+		@include _768 {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	// .contacts__btn-telegram
+	&__telegram {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+		color: rgb(37, 164, 226);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		text-align: left;
+		border-radius: 50px;
+		background: rgb(252, 252, 252);
+
+		span {
+			position: relative;
+		}
+		.icon-telegram {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			font-size: 16px;
+			transform: translateX(-20px);
+			@include flex-align-center;
+		}
+	}
+
+	// .contacts__watsapp
+	&__watsapp {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		border-radius: 50px;
+		background: rgb(252, 252, 252);
+		color: rgb(40, 180, 62);
+		span {
+			transform: translateX(5px);
+			position: relative;
+		}
+
+		.icon-watsapp {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			font-size: 14px;
+			transform: translateX(-20px);
+			@include flex-align-center;
+		}
+	}
+
+	// .contacts__contact
+	&__contact {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+		color: rgb(76, 117, 163);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		border-radius: 50px;
+		background: rgb(252, 252, 252);
+		span {
+			transform: translateX(10px);
+			position: relative;
+		}
+
+		.icon-incontact {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			font-size: 16px;
+			color: #145cef;
+			transform: translateX(-23px);
+			@include flex-align-center;
+		}
+	}
+
+	// .contacts__mail
+	&__mail {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+		color: rgb(20, 92, 239);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		border-radius: 50px;
+		background: rgb(252, 252, 252);
+		span {
+			transform: translateX(-3px);
+			position: relative;
+		}
+
+		.icon-mail {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			font-size: 11px;
+			transform: translateX(-24px);
+			@include flex-align-center;
+		}
+	}
+}
+
+.form {
+	padding: 56px 48px 56px 48px;
+	border-radius: 40px;
+	background: rgba(252, 252, 252, 0.2);
+
+	@include _960 {
+		padding: 40px 16px 40px 16px;
+	}
+
+	// .form__title
+	&__title {
+		color: rgb(252, 252, 252);
+		font-family: Manrope;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 104%;
+		letter-spacing: 0%;
+		text-align: left;
+		@include _960 {
+			font-size: 24px;
+		}
+	}
+
+	// .form__items
+	&__items {
+		border-radius: 12px;
+		overflow: hidden;
+		margin: 32px 0;
+		@include _960 {
+			margin: 24px 0;
+		}
+	}
+
+	// .form__item
+	&__item {
+		color: rgb(252, 252, 252);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		background: rgba(252, 252, 252, 0.22);
+		input {
+			width: 100%;
+		}
+		// opacity: 0.7;
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+
+	// .form__input
+	&__input {
+		padding: 16px 24px 16px 24px;
+		color: rgb(252, 252, 252);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		transition: box-shadow 0.3s ease 0s;
+		width: 100%;
+		opacity: 0.7;
+		&::-webkit-input-placeholder {
+			/* WebKit, Blink, Edge */
+			color: rgb(252, 252, 252);
+			font-size: 14px;
+		}
+		&:focus {
+			box-shadow: 0px 0px 4px 3px #145cef;
+		}
+	}
+
+	// .form__text
+	&__text {
+		margin-bottom: 16px;
+		color: #fcfcfc;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: 0%;
+		opacity: 0.8;
+		span {
+			color: #4ad6ff;
+		}
+		@include _960 {
+			margin-bottom: 10px;
+		}
+	}
+
+	// .form__button
+	&__button {
+		cursor: pointer;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 32px 10px 32px;
+		color: rgb(20, 92, 239);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		border-radius: 50px;
+		background: rgb(252, 252, 252);
+
+		.icon-mail {
+			margin-left: 10px;
+			height: 100%;
+			font-size: 14px;
+			color: #145cef;
+			@include flex-align-center;
+		}
+	}
+}

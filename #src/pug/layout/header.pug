@@ -1,1 +1,44 @@
-header.header Header
+.header
+	._wrapper.show-element 
+		._body
+			nav.menu-top 
+				._left 
+					._logo
+					._links(data-move-el="[{'bp-max': 690, 'index': 1, 'target': '.bp-10'}]")
+						._link
+							a(href="#") Холдинг
+						._link
+							a(href="#") Nordcore
+						._link 
+							a(href="#") Swift Technical
+				._lang 
+					.lang-btn 
+						._item ru 
+							+iconfont('angle-down')
+				._right
+					a(href="mailto:")._mail 
+						+iconfont('mail')
+					a(href="tel:+74956636500")._contact
+						+iconfont('phone')
+						span +7 (495) 663-65-00
+					.burger-bottom
+						._items
+							svg(viewBox="10 6 44 36")
+								path(d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37")
+								path(d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24")
+								path(d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37")
+			nav.menu-doun(data-move-el="[{'bp-max': 768, 'index': 2, 'target': '.bp-9'}]")
+				._column
+					a(href="#")._link Услуги
+					._btn-icon
+						+iconfont('angle-down')
+					a(href="#")._link О холдинге
+					a(href="#")._link Кейсы
+					a(href="#")._link Медиа
+					a(href="#")._link Вакансии
+					a(href="#")._link Контакты
+				._column
+					button(type="submit")._button Отправить резюме
+					button(type="submit")._button Обсудить проект
+						+iconfont("interaction") 
+						

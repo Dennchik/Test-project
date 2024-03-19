@@ -1,0 +1,39 @@
+.communication
+	._body 
+		._column 
+			.contacts
+				._title Консультация специалиста
+				._text Напишите нам, позвоните или оставьте заявку. Выбирайте наиболее удобный для вас способ коммуникации!
+				._footer
+					a(href="#")._telegram
+						span Telegram 
+							+iconfont("telegram")
+					a(href="#")._watsapp
+						span Whatsapp
+							+iconfont("watsapp")
+					a(href="#")._contact
+						span Вконтакте
+							+iconfont("incontact")
+					a(href="mailto:")._mail
+						span Почта
+							+iconfont('mail')
+		._column 
+			.form
+				._title Оставьте заявку
+				form(action="#" method="#")#form._body
+					._items
+						.form__item
+							label.form__lable(for="form-name" ) 
+							input#form-name.form__input(type="text", name="name", autocomplete=" ", placeholder="Имя")
+						.form__item
+							label.form__lable(for="form-phone")
+							input#form-phone.form__input._phone(type="tel", name="phone", autocomplete=" ", placeholder="Телефон")
+						.form__item
+							label.form__lable(for="form-email")
+							input#form-email.form__input._email(type="email", name="email", autocomplete=" ", placeholder="Enter E-mail") 
+					._text
+						span // 
+						| Нажимая на кнопку «Отправить данные», вы даете согласие на обработку персональный данных 
+					button(type="submit")._button   
+						span Отправить данные
+						+iconfont('mail')

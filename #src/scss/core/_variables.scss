@@ -1,22 +1,17 @@
 //* ------------------------------- [Variables] --------------------------------
 $minWidth: 320px;
 $maxWidth: 1920px;
-$maxWidthContainer: 1024px;
-$headerHeight: 4rem;
-$footerHeight: 4rem;
-$sidebarWidth: 4rem;
-$titleHeight: 3rem;
-$min-height: calc(100% - ($headerHeight + $footerHeight));
+$maxWidthContainer: 1440px;
+// $min-height: calc(100% - ($headerHeight + $footerHeight));
 //* ---------------------------- [Font Variables] ------------------------------
 $font-path: '../fonts';
-$font-defoult: 'Roboto', sans-serif;
-$font-family-secondary: 'Roboto Slab', sans-serif;
-$font-weight-defoult: 470;
-$font-size-defoult: 1.4rem;
+$font-defoult: 'Nunito Sans', sans-serif;
+$font-family-secondary: 'Manrope', sans-serif;
+$font-weight-defoult: 400;
+$font-size-defoult: 1.8rem;
+$font-color-defoult: rgb(16, 16, 16);
 //* ----------------------------------------------------------------------------
-$font-color-var-name: #77faff;
-$font-color-var: #cd6dfa;
-$font-color-other-var: #e99287;
+$background-color: rgb(245, 245, 245);
 //* -------------------------------- [Color] -----------------------------------
 $gray: #999999;
 $yellow: #ecc673ee;
@@ -26,41 +21,21 @@ $darkcyan: darkcyan;
 $color: #058daf;
 $text-color: #000000;
 //* ---------------------------- [Other colors] --------------------------------
-$boxShadow: #000;
-$boxShadowSecond: #000;
-$BlackShadow: #091116;
-// -----------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------
 $text-title: #8ff2ff;
 $text-selection: #0054633f;
 $text-color-selection: #9b9999;
-
 // -----------------------------------------------------------------------------
 :root {
-	--font-body-color: #7f8dcf;
-	--font-color-second: #4d5bce;
-	--font-color-title: #88c0ff;
-	--font-color-active: #7796f3;
-	--font-color-not-active: #8bb0ff6c;
 	//* ---------------------------- [Background] --------------------------------
 	--background-color: #191b27;
-	--background-editor: #22222e;
-	--background-selected: #2b2d4156;
-	--background-terminal: #16161e;
-	--background-side-bar: #191b27;
-	--background-active-bar: #1e202e;
-	--background-color-title: #0e0e13;
 	--background-transparent: #0e0e13da;
 	//* ---------------------------- [Scrollbar] ---------------------------------
 	--selected-color: #71cbff;
 	--themes-color: #0b486b;
 	--background-thumb: #16161e;
 	--scrollbar-thumb-bgcolor: #07325a8a;
-	//* -------------------------- [Other colors] --------------------------------
 	--border-color: #3c548d49;
-
-	// ---------------------------------------------------------------------------
+	//* -------------------------- [Other colors] --------------------------------
 	--pos: left center;
 	--size: 0;
 	--inset-top: 0;

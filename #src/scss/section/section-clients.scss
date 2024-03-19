@@ -1,0 +1,212 @@
+.clients {
+	// .clients__body
+	&__body {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 184px 0 120px;
+		@include _690 {
+			padding: 144px 16px 88px 16px;
+		}
+	}
+
+	// .clients__title
+	&__title {
+		color: rgb(16, 16, 16);
+		font-family: Manrope;
+		font-size: 48px;
+		font-weight: 600;
+		line-height: 100%;
+		letter-spacing: 0%;
+		margin-bottom: 40px;
+		@include _960 {
+			font-size: 32px;
+			max-width: 596px;
+			margin: 0 auto 32px;
+		}
+	}
+
+	// .clients__cards
+	&__cards {
+		display: flex;
+		gap: 8px;
+		margin-bottom: 24px;
+		@include _960 {
+			flex-direction: column;
+		}
+	}
+
+	// .clients__item-card
+	&__item-card {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		position: relative;
+		padding-top: 266px;
+		border-radius: 32px;
+		@include _960-1200 {
+			padding-top: calc(200px + (266 - 200) * ((100vw - 960px) / (1200 - 960)));
+		}
+		@include _662 {
+			padding-top: calc(120px + (266 - 120) * ((100vw - 320px) / (662 - 320)));
+		}
+		&:hover {
+			box-shadow: 0px 0px 12px #d6d6d6dc;
+		}
+		&:nth-child(1) {
+			.clients__lable {
+				background: rgb(2, 204, 137);
+			}
+			.clients__image {
+				background: url('../img/client.png') top / contain no-repeat;
+			}
+		}
+		&:nth-child(2) {
+			.clients__lable {
+				background: rgb(244, 118, 22);
+			}
+			.clients__image {
+				background: url('../img/client.png') top / contain no-repeat;
+			}
+		}
+		@include _min-960 {
+			max-width: 596px;
+		}
+		@include _690 {
+			border-radius: 24px;
+		}
+	}
+
+	// .clients__lable
+	&__lable {
+		position: absolute;
+		z-index: 9;
+		top: 16px;
+		left: 16px;
+		padding: 10px 24px 12px 24px;
+		color: rgb(252, 252, 252);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 104%;
+		letter-spacing: 0%;
+
+		border-radius: 50px;
+		@include _690 {
+			font-size: 13px;
+			padding: 6px 16px 8px 16px;
+		}
+	}
+
+	// .clients__image
+	&__image {
+		border-radius: 32px;
+		@extend .service-card__image;
+	}
+
+	// .clients__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+		position: relative;
+		z-index: 9;
+		padding: 40px;
+		background: rgb(252, 252, 252);
+		border-radius: 32px;
+		@include _690 {
+			padding: 32px 24px 32px 24px;
+			border-radius: 24px;
+		}
+	}
+
+	// .clients__text
+	&__text {
+		height: 100%;
+		flex: 1 1 100%;
+		color: rgb(16, 16, 16);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 146%;
+		letter-spacing: 0%;
+		opacity: 0.8;
+		@include _690 {
+			font-size: 17px;
+		}
+	}
+
+	// .clients__link
+	&__link {
+		margin-top: 17px;
+		@include flex-align-center;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		color: rgb(20, 92, 239);
+		font-family: Manrope;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 100%;
+		letter-spacing: 0%;
+		@include _690 {
+			font-size: 15px;
+		}
+		.icon-read-text {
+			color: rgb(20, 92, 239);
+			margin-left: 5px;
+		}
+	}
+
+	// .clients__caption
+	&__caption {
+		margin-top: 40px;
+	}
+
+	// .clients__name
+	&__name {
+		margin-bottom: 4px;
+		color: rgb(16, 16, 16);
+		font-family: Manrope;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 120%;
+		letter-spacing: 0%;
+		text-align: left;
+
+		@include _690 {
+			font-size: 17px;
+		}
+	}
+
+	// .clients__post
+	&__post {
+		color: rgb(16, 16, 16);
+		font-family: Nunito Sans;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 140%;
+		letter-spacing: 0%;
+		opacity: 0.5;
+		@include _690 {
+			font-size: 13px;
+		}
+	}
+
+	// .clients__button
+	&__button {
+		cursor: pointer;
+		padding: 10px 32px 10px 32px;
+		border-radius: 50px;
+		color: rgb(20, 92, 239);
+		font-family: Manrope;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 160%;
+		letter-spacing: 0%;
+		text-align: center;
+		background: rgb(252, 252, 252);
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background: rgba(102, 102, 102, 0.2);
+		}
+	}
+}
